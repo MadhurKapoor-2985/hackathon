@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "CompareCreditCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <title>Compare Credit Cards Online - Compare &amp; Apply For Credit Cards Online - My Bank</title>
+</head>
+
+<body>
+
+    <h1 class="line-em-up" wiid="C1757">Compare Credit Cards</h1>
+
+    <table class="" style="width:100%; padding-left: 1in; padding-right: 1in;">
+        <tr>
+
+            <td class="description"><img src="../images/OldCreditCard.png" id="card1" wiid="C127" height="200px" width="400px"></td>
+            <td class="description"><img src="../images/NewCreditCard.jpg" id="card1" wiid="C127" height="200px" width="400px"></td>
+        </tr>
+        <tr>
+
+            <td class="description">Existing Credit Card by My Bank</td>
+            <td class="description">New Credit Card by My Bank</td>
+        </tr>
+        <tr>
+
+            <td class="description"></td>
+            <td class="description"><div><a asp-controller="CreditCard" asp-action="ApplyCreditCard" style="margin-top: 20px;" id="btn1" class="btn">APPLY NOW</a></div></td>
+        </tr>
+        <tr>
+
+            <td>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+

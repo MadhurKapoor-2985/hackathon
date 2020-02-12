@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "ApplyCreditCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <title>Apply For Credit Cards Online - My Bank</title>
+    
+</head>
+<body>
+    <h1 class="line-em-up">Apply For Credit Cards Online</h1>
+
+    @*<input type="file" accept="image/*" capture="camera">*@
+
+    <form method="post" enctype="multipart/form-data" asp-controller="CreditCard" asp-action="UploadAndAuthenticate">
+        <div class="form-group">
+            <div class="col-md-10">
+                <p>Please Upload your photo for Authentication:</p>
+                <input type="file" accept="image/jpeg" capture="camera" name="files" />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Upload And Verify" />
+            </div>
+        </div>
+    </form>
+
+
+    <br /><br />
+
+    @*<table>
+        <tr>
+            <td>
+                <img src="https://hackathonimagedump.s3.us-east-2.amazonaws.com/HappyFace.jpg" height="300px" width="600px" />
+            </td>
+            <td>
+                <img id="myimage" height="300px" width="600px">
+            </td>
+        </tr>
+    </table>*@
+
+</body>
